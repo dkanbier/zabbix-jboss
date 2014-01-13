@@ -21,9 +21,10 @@ Quick setup
 ===========
 
 1.	Copy the contents of this repository in /opt/zabbix.
-2.	Modify /opt/zabbix/twiddle.properties with the correct information for your environment.
-3.	Locate the twiddle.sh script wich is part of the JBoss software.
-4.	Modify the $_twiddle parameter under #Options in the queryJBoss.pl script with the output of step 3.
+2.	Give the agent permission to the contents (chown -R zabbix:zabbix /opt/zabbix).
+3.	Modify /opt/zabbix/twiddle.properties with the correct information for your environment.
+4.	Locate the twiddle.sh script wich is part of the JBoss software.
+5.	Modify the $_twiddle parameter under #Options in the queryJBoss.pl script with the output of step 3.
 
 You should be good to go now, you can test this by running the script from the commandline first:
 

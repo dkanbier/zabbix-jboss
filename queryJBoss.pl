@@ -24,14 +24,14 @@
 #
 # Examples:
 #
-#	getJBossList.pl jboss.jca
+#	queryJBoss.pl jboss.jca
 #
 #	returns:
 #		{#JBOSSJCA_JNDI}
 #		{#JBOSSJCA_SERVICE}
 #		{#JBOSSJCA_NAME}
 #
-#	getJBossList.pl jboss.messaging.destination QUEUE
+#	queryJBoss.pl jboss.messaging.destination QUEUE
 #
 #	returns:
 #		{#QUEUE_JNDI}
@@ -39,14 +39,12 @@
 #		{#QUEUE_NAME}
 #
 ################################################################################
-# $Id$
-################################################################################
 use strict;
 use warnings;
 
 # Options
 my $_twiddle 		= "/opt/jbossas/jboss-as/bin/twiddle.sh";
-my $_twiddle_properties = "/opt/zabbix/twiddle/twiddle.properties";
+my $_twiddle_properties	= "/opt/zabbix/twiddle/twiddle.properties";
 my $_twiddle_log4j 	= "/opt/zabbix/twiddle/log4j.properties";
 
 # Script arguments (no validating, needs improvements)

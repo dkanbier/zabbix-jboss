@@ -60,4 +60,4 @@ Also, the script doesn't fetch any data for the discovered items. It only enable
 
 More information
 ----------------
-I'm in the progress of setting up a blogpost explaining this in detail, including the setup of Zabbix and adding usefull items. If you need a hand now in setting this up, please send me a message!
+Please visit [my weblog](http://www.denniskanbier.nl/blog/middleware/jboss-monitoring-and-zabbix/  "JBoss and Zabbix") for more information.

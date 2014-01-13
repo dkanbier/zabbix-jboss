@@ -45,7 +45,7 @@ use strict;
 use warnings;
 
 # Options
-my $_twiddle 		= "/root/jbossas/bin/twiddle.sh";
+my $_twiddle 		= "/opt/jbossas/jboss-as/bin/twiddle.sh";
 my $_twiddle_properties = "/opt/zabbix/twiddle/twiddle.properties";
 my $_twiddle_log4j 	= "/opt/zabbix/twiddle/log4j.properties";
 
@@ -91,16 +91,19 @@ foreach my $_jndi (@_data)
 	# Get the key/value pairs from the JBoss output
 	my @_keyvalues = split(/,/, $_jndi);
 
+	my $_f = 1;
 	foreach my $_s (@_keyvalues)
-	{
+	{	
+		print ",\n" if not $_f;
+		$_f = 0;
 		my @_kv = split(/=/, $_s);
 		my $_key = $_kv[0];
 		$_key = uc $_key;
 		my $_value = $_kv[1];
-		print "\t\t\"{#${_id}_${_key}}\":\"$_value\",\n";
+		print "\t\t\"{#${_id}_${_key}}\":\"$_value\"";
 	}
 	
-	print "\t}\n";
+	print "\n\t}\n";
 }
 
 print "\n\t]\n";

@@ -61,3 +61,7 @@ Also, the script doesn't fetch any data for the discovered items. It only enable
 More information
 ----------------
 Please visit [my weblog](http://www.denniskanbier.nl/blog/middleware/jboss-monitoring-and-zabbix/  "JBoss and Zabbix") for more information.
+
+Donations
+---------
+BTC: 15vzZ9jCW5GfqbDmB1hpWDWf5uaj7Neabv

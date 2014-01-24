@@ -43,9 +43,9 @@ use strict;
 use warnings;
 
 # Options
-my $_twiddle 		= "/opt/jbossas/jboss-as/bin/twiddle.sh";
+my $_twiddle		= "/opt/jbossas/jboss-as/bin/twiddle.sh";
 my $_twiddle_properties	= "/opt/zabbix/twiddle/twiddle.properties";
-my $_twiddle_log4j 	= "/opt/zabbix/twiddle/log4j.properties";
+my $_twiddle_log4j	= "/opt/zabbix/twiddle/log4j.properties";
 
 # Script arguments (no validating, needs improvements)
 if (! defined $ARGV[0])

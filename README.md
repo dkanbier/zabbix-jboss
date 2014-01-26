@@ -12,7 +12,7 @@ Requirements
 
 Notes
 -----
-Use the correct version of scripts for your JBoss installations. Using the jboss-eap5 on a JBoss EAP 6 instance will not work.
+Use the correct version of scripts for your JBoss installations. Using the jboss-eap5 scripts on a JBoss EAP 6 instance will not work.
 
 More information
 ----------------

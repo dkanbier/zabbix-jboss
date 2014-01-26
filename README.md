@@ -2,6 +2,10 @@ Scripts for using low-level discovery of JBoss items in Zabbix
 ==============================================================
 These scripts are intended to be used with the Zabbix agent, to enable low-level discovery of JBoss items like queues or message pools. 
 
+Currenty supported:
+
+* JBoss Enterprise Application Platform 5
+
 Requirements
 -----------
 
